@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sms.FXMLDocumentController">
+   <children>
+      <TableView fx:id="Staff_Table" layoutX="91.0" layoutY="201.0" prefHeight="299.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="201.0">
+        <columns>
+          <TableColumn fx:id="Col_staffID" prefWidth="60.0" text="StaffID" />
+          <TableColumn fx:id="Col_Name" prefWidth="102.33334350585938" text="Name" />
+            <TableColumn fx:id="Col_UserName" minWidth="1.0" prefWidth="91.99998474121094" text="Username" />
+            <TableColumn fx:id="Col_password" prefWidth="79.00001525878906" text="Password" />
+            <TableColumn fx:id="Col_Position" prefWidth="86.0" text="Position" />
+            <TableColumn fx:id="Col_Email" prefWidth="121.0" text="Email" />
+            <TableColumn fx:id="Col_Address" prefWidth="124.33334350585938" text="Address" />
+            <TableColumn fx:id="Col_PhoneNo" prefWidth="135.0" text="PhoneNo" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

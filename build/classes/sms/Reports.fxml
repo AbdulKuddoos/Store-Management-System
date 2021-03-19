@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sms.ReportsController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f4fbf7;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="statusPane" layoutY="44.0" prefHeight="117.0" prefWidth="700.0" style="-fx-background-color: #b6e8c7;">
+               <children>
+                  <Label fx:id="statusLabel" layoutX="81.0" layoutY="24.0" prefHeight="40.0" prefWidth="286.0" text="Reports" textFill="#f5f5f5">
+                     <font>
+                        <Font name="Verdana Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="statusAddress_lbl" layoutX="81.0" layoutY="-4.0" prefHeight="37.0" prefWidth="115.0" text="/home/Reports" textFill="#f5f5f5">
+                     <font>
+                        <Font name="Verdana Bold" size="9.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <GridPane layoutX="4.0" layoutY="171.0" prefHeight="450.0" prefWidth="693.0">
+               <children>
+                  <Pane prefHeight="110.0" prefWidth="700.0">
+                     <children>
+                        <Button fx:id="btnAddReport" layoutX="550.0" layoutY="16.0" mnemonicParsing="false" onAction="#actionOnAddReports" prefHeight="45.0" prefWidth="110.0" text="Add Reports" />
+                        <Button fx:id="btnViewDetails" layoutX="410.0" layoutY="16.0" mnemonicParsing="false" onAction="#actionOnViewDetails" prefHeight="45.0" prefWidth="110.0" text="View Details" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Pane>
+                  <TableView fx:id="tableReport" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                    <columns>
+                      <TableColumn fx:id="colReportID" prefWidth="92.0" text="ReportID" />
+                      <TableColumn fx:id="colType" prefWidth="100.0" text="Type" />
+                        <TableColumn fx:id="colDate" prefWidth="91.0" text="Date" />
+                        <TableColumn fx:id="colStaffID" prefWidth="81.0" text="StaffID" />
+                    </columns>
+                  </TableView>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="141.0" minHeight="0.0" prefHeight="88.0" valignment="CENTER" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="383.0" minHeight="10.0" prefHeight="383.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

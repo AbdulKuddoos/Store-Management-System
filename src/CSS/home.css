@@ -1,0 +1,40 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+@font-face {
+    font-family: Delicious;
+    src: url('Delicious-Roman.otf');
+}
+
+.button{
+    -fx-background-color:   #ace5bf;
+    -fx-font-family: 'Book Antiqua';
+    -fx-bakground-radius: 18;
+    -fx-font-size: 20;
+    -fx-text-fill: #555655;
+}
+
+.button:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-bakground-radius: 100;
+    -fx-font-size: 22;
+    -fx-text-fill:  #98dfaf;
+    -fx-border-radius: 100px;
+    -fx-border-width: 25;
+}
+
+.button:pressed{
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-bakground-radius: 22;
+    -fx-font-size: 25;
+    -fx-text-fill: #555655;
+    -fx-border-radius: 20px;
+    -fx-border-width: 3;
+}

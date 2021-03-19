@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sms.AddPurchasesController">
+   <children>
+      <GridPane alignment="TOP_RIGHT" hgap="15.0" layoutX="90.0" layoutY="5.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="412.0" prefWidth="321.0" vgap="15.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <TextField fx:id="text_PurchaseID" promptText="PC01" stylesheets="@../CSS/btn.css" GridPane.columnIndex="1" />
+            <TextField fx:id="text_PurchasingCost" prefHeight="25.0" prefWidth="226.0" promptText="50000" stylesheets="@../CSS/btn.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="text_SupplierID" promptText="SP01" stylesheets="@../CSS/btn.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="text_StaffID" promptText="ST01" stylesheets="@../CSS/btn.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PurchaseID" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Purchasing Cost" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date" GridPane.rowIndex="2" />
+            <Text nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="StaffID" GridPane.rowIndex="3" />
+            <Label text="SupplierID" GridPane.rowIndex="4" />
+            <TextField fx:id="text_Date" promptText="YYYY-MM-DD" stylesheets="@../CSS/btn.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button fx:id="btnAddPurchase" layoutX="396.0" layoutY="439.0" mnemonicParsing="false" onAction="#actionOnAddPurchase" prefHeight="37.0" prefWidth="80.0" text="Add" AnchorPane.leftAnchor="396.0" AnchorPane.rightAnchor="4.0" />
+   </children>
+</AnchorPane>

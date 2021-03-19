@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sms.HomeController">
+   <left>
+      <VBox prefHeight="750.0" prefWidth="200.0" style="-fx-background-color: #ace5bf;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="102.0" prefWidth="174.0" style="-fx-background-color: #98dfaf;">
+               <children>
+                  <Text fill="#807171" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-color: #555655;" text="Store Management System" wrappingWidth="151.0">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="22.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" top="12.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <opaqueInsets>
+                  <Insets left="30.0" top="20.0" />
+               </opaqueInsets>
+            </HBox>
+            <Button fx:id="navBtn_Products" alignment="TOP_LEFT" contentDisplay="RIGHT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="60.0" prefWidth="205.0" stylesheets="@../CSS/home.css" text="Products">
+               <font>
+                  <Font size="66.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Button>
+            <Button fx:id="navBtn_Sales" alignment="TOP_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="60.0" prefWidth="205.0" stylesheets="@../CSS/home.css" text="Sales" />
+            <Button fx:id="navBtn_Purchases" alignment="TOP_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="60.0" prefWidth="205.0" stylesheets="@../CSS/home.css" text="Purchases" />
+            <Button fx:id="navBtn_Customers" alignment="TOP_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="60.0" prefWidth="205.0" stylesheets="@../CSS/home.css" text="Customers" />
+            <Button fx:id="navBtn_Reports" alignment="TOP_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="60.0" prefWidth="205.0" stylesheets="@../CSS/home.css" text="Reports" />
+            <Button fx:id="navBtn_Worker" alignment="TOP_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="60.0" prefWidth="205.0" stylesheets="@../CSS/home.css" text="Worker" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

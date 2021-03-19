@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="712.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sms.LogInController">
+   <children>
+      <AnchorPane layoutY="75.0" prefHeight="390.0" prefWidth="185.0" style="-fx-background-color: #b6fcd5; -fx-border-color: #A0DB8E;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <VBox layoutX="47.0" layoutY="111.0" prefHeight="213.0" prefWidth="94.0" spacing="40.0" AnchorPane.bottomAnchor="109.0" AnchorPane.topAnchor="110.0">
+               <children>
+                  <Button fx:id="sign_In_btn" layoutX="57.0" layoutY="148.0" mnemonicParsing="false" onAction="#actionOnSignInBtn" prefHeight="37.0" prefWidth="98.0" stylesheets="@../CSS/btn.css" text="Sign-In" />
+                  <Button fx:id="sign_Up_btn" layoutX="57.0" layoutY="183.0" mnemonicParsing="false" onAction="#actionOnSignUnBtn" prefHeight="37.0" prefWidth="111.0" stylesheets="@../CSS/btn.css" text="Sign-Up" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <SplitPane fx:id="splitPane" dividerPositions="0.0076045627376425855" layoutX="185.0" layoutY="75.0" prefHeight="390.0" prefWidth="528.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="388.0" prefWidth="53.0">
+               <children>
+                  <Button fx:id="logIn_Btn" layoutX="223.0" layoutY="225.0" mnemonicParsing="false" onAction="#actionOnLogInBtn" prefHeight="23.0" prefWidth="54.0" style="-fx-background-color: red; -fx-font-weight: bold; -fx-text-fill: white;" text="Log-In" />
+                  <TextField fx:id="username_LogIn" layoutX="175.0" layoutY="116.0" promptText="username" stylesheets="@../CSS/btn.css" />
+                  <PasswordField fx:id="password_LogIn" layoutX="175.0" layoutY="176.0" promptText="********" stylesheets="@../CSS/btn.css" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="388.0" prefWidth="496.0">
+               <children>
+                  <GridPane alignment="TOP_RIGHT" hgap="10.0" layoutX="3.0" layoutY="1.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="327.0" prefWidth="385.0" vgap="10.0" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="135.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="staffID_SignUp" promptText="ST followed by a number/ ST01" stylesheets="@../CSS/btn.css" GridPane.columnIndex="1" />
+                        <TextField fx:id="fullName_SignUp" promptText="Harry Potter" stylesheets="@../CSS/btn.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="username_SignUp" promptText="harry123" stylesheets="@../CSS/btn.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="password_SignUp" promptText="must be of 8 characters" stylesheets="@../CSS/btn.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="StaffID" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name" GridPane.rowIndex="1" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username" GridPane.rowIndex="2" />
+                        <Text nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" GridPane.rowIndex="3" />
+                        <TextField fx:id="email_SignUp" promptText="\@mail.com" stylesheets="@../CSS/btn.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label text="Position" GridPane.rowIndex="4" />
+                        <Label text="Email" GridPane.rowIndex="5" />
+                        <Label text="Address" GridPane.rowIndex="6" />
+                        <TextField fx:id="address_SignUp" stylesheets="@../CSS/btn.css" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <ComboBox fx:id="positionChoiceBox" prefHeight="25.0" prefWidth="192.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="phoneNo_SignUp" promptText="+92-..." GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label text="PhoneNo" GridPane.rowIndex="7" />
+                     </children>
+                  </GridPane>
+                  <Button fx:id="submit_SignUp" layoutX="331.0" layoutY="349.0" mnemonicParsing="false" onAction="#actionOnSubmitBtn" text="Submit" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Text fill="#34683e" fontSmoothingType="LCD" layoutX="179.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store Management System">
+         <font>
+            <Font name="Book Antiqua Bold" size="29.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
